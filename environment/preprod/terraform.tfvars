@@ -19,6 +19,12 @@ rgname = {
 
   }
 
+  rg4 = {
+    name     = "harshit-preprod"
+    location = "westus"
+
+  }
+
 }
 
     
