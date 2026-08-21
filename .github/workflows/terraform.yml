@@ -1,7 +1,9 @@
 name: Terraform Preprod
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 permissions:
   id-token: write
@@ -25,9 +27,9 @@ jobs:
       - name: Azure Login
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          client-id: "daa47584-8ad5-403b-9073-015c77c0f57c"
+          tenant-id: "1ce567c7-283d-4272-b4bd-8292e9e4cd20"
+          subscription-id: "617408c3-ce8d-4f34-a887-db4cd7d25b4e"
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
