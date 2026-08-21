@@ -3,7 +3,7 @@ name: Terraform Preprod
 on:
   push:
     branches:
-      - feature/rg-add
+      - main
 
 permissions:
   id-token: write
@@ -45,5 +45,8 @@ jobs:
 
       - name: Terraform Plan
         run: terraform plan -var-file="terraform.tfvars"
+
+      - name: Terraform Apply
+        run: terraform apply -auto-approve -var-file="terraform.tfvars"
 
    
