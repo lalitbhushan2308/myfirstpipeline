@@ -25,6 +25,13 @@ rgname = {
 
   }
 
+    rg5 = {
+    name     = "tillu-preprod"
+    location = "centralindia"
+
+  }
+
+
 }
 
     
