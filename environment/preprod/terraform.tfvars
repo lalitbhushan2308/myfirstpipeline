@@ -34,4 +34,16 @@ rgname = {
 
 }
 
+stgname={
+
+  stg1={
+     name     = "lalit2308"
+  location = "eastus"
+  resource_group_name = "lalit-preprod"
+  account_replication_type = "LRS"
+  account_tier = "Standard"
+
+
+  }
+}
     
