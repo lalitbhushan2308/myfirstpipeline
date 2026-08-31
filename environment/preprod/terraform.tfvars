@@ -42,8 +42,14 @@ stgname={
   resource_group_name = "lalit-preprod"
   account_replication_type = "LRS"
   account_tier = "Standard"
+  }
 
-
+    stg2={
+     name     = "tinu2308"
+  location = "westus"
+  resource_group_name = "tillu-preprod"
+  account_replication_type = "LRS"
+  account_tier = "Standard"
   }
 }
     
